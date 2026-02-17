@@ -23,11 +23,11 @@ export const ConsultationPage: React.FC = () => {
   return (
     <div className="overflow-x-hidden">
       {/* ── Hero ── */}
-      <section className="pt-24 pb-28 px-4 md:px-6 lg:px-8 overflow-hidden relative">
+      <section className="pt-12 pb-16 md:pt-24 md:pb-28 px-4 md:px-6 lg:px-8 overflow-hidden relative">
         {/* Background glow orbs */}
         <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[120px] glow-pulse"></div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
           <div className="space-y-8 scroll-reveal-left">
             <span className="inline-flex items-center px-4 py-1.5 glass-card-strong text-primary font-semibold text-xs uppercase tracking-widest rounded-full shimmer cursor-default">
               <span className="material-icons-round text-sm mr-2">business_center</span>
@@ -87,7 +87,7 @@ export const ConsultationPage: React.FC = () => {
       </section>
 
       {/* ── Pain Points ── */}
-      <section className="py-24 bg-white dark:bg-[#1E1E1E] border-y border-blue-100 dark:border-white/5 px-4 md:px-6 lg:px-8">
+      <section className="py-12 md:py-24 bg-white dark:bg-[#1E1E1E] border-y border-blue-100 dark:border-white/5 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16 scroll-reveal">
             <p className="font-mono text-sm text-primary uppercase tracking-widest">Common Problems</p>
@@ -206,7 +206,7 @@ export const ConsultationPage: React.FC = () => {
       </SectionWrapper>
 
       {/* ── Data-Driven Success ── */}
-      <section className="py-24 px-4 md:px-6 lg:px-8 overflow-hidden">
+      <section className="py-12 md:py-24 px-4 md:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="bg-slate-900 dark:bg-black rounded-[2rem] p-10 md:p-20 relative text-white overflow-hidden noise-overlay">
             <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[100px] glow-pulse"></div>
@@ -259,7 +259,7 @@ export const ConsultationPage: React.FC = () => {
       </section>
 
       {/* ── Roadmap ── */}
-      <section className="py-24 px-4 md:px-6 lg:px-8 bg-white dark:bg-[#1E1E1E]">
+      <section className="py-12 md:py-24 px-4 md:px-6 lg:px-8 bg-white dark:bg-[#1E1E1E]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 space-y-4 scroll-reveal">
             <p className="font-mono text-xs text-primary uppercase tracking-widest">Your Journey</p>
@@ -329,7 +329,7 @@ export const ConsultationPage: React.FC = () => {
       </SectionWrapper>
 
       {/* ── FAQ ── */}
-      <section className="py-24 px-4 md:px-6 lg:px-8 bg-white dark:bg-[#1E1E1E]">
+      <section className="py-12 md:py-24 px-4 md:px-6 lg:px-8 bg-white dark:bg-[#1E1E1E]">
         <div className="max-w-3xl mx-auto space-y-12">
           <div className="text-center scroll-reveal">
             <p className="font-mono text-xs text-primary uppercase tracking-widest mb-4">Need Answers?</p>

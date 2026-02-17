@@ -25,12 +25,12 @@ export const HomePage: React.FC = () => {
   return (
     <div className="overflow-x-hidden">
       {/* ── Hero Section ── */}
-      <header className="relative pt-24 pb-28 overflow-hidden">
+      <header className="relative pt-12 pb-16 md:pt-24 md:pb-28 overflow-hidden">
         {/* Background glow orbs */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] glow-pulse"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-300/10 rounded-full blur-[100px] glow-pulse" style={{ animationDelay: '2s' }}></div>
 
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
           <div className="space-y-8 scroll-reveal-left">
             {/* Animated badge */}
             <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card-strong text-primary text-xs font-mono uppercase tracking-widest shimmer cursor-default">
@@ -76,8 +76,8 @@ export const HomePage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-              {/* Floating stat: Active Automations */}
-              <div className="absolute bottom-8 left-6 glass-card-strong rounded-2xl p-4 premium-shadow-lg animate-bounce-slow">
+              {/* Floating stat: Active Automations - hidden on mobile, shown on md+ */}
+              <div className="absolute bottom-8 left-6 glass-card-strong rounded-2xl p-4 premium-shadow-lg animate-bounce-slow hidden md:flex">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
                     <span className="material-icons-round">settings_input_component</span>
@@ -89,8 +89,8 @@ export const HomePage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Floating stat: Rating */}
-              <div className="absolute top-10 right-6 glass-card-strong rounded-2xl p-3 premium-shadow-lg flex flex-col items-center space-y-1 animate-float">
+              {/* Floating stat: Rating - hidden on mobile, shown on md+ */}
+              <div className="absolute top-10 right-6 glass-card-strong rounded-2xl p-3 premium-shadow-lg flex-col items-center space-y-1 animate-float hidden md:flex">
                 <p className="text-primary font-bold text-2xl tracking-tighter stat-glow">4.9/5</p>
                 <div className="flex text-primary">
                   {[1, 2, 3, 4, 5].map(s => (
@@ -98,6 +98,28 @@ export const HomePage: React.FC = () => {
                   ))}
                 </div>
                 <p className="text-[9px] font-mono uppercase tracking-widest text-slate-500">Student Rating</p>
+              </div>
+            </div>
+
+            {/* Mobile-only stat badges shown below the image */}
+            <div className="flex gap-3 mt-4 md:hidden">
+              <div className="flex-1 glass-card-strong rounded-xl p-3 premium-shadow flex items-center space-x-3">
+                <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                  <span className="material-icons-round text-lg">settings_input_component</span>
+                </div>
+                <div>
+                  <p className="text-[9px] font-mono uppercase tracking-widest text-slate-500">Active Automations</p>
+                  <p className="text-base font-bold stat-glow">200+ Workflows</p>
+                </div>
+              </div>
+              <div className="glass-card-strong rounded-xl p-3 premium-shadow flex flex-col items-center justify-center space-y-0.5">
+                <p className="text-primary font-bold text-xl tracking-tighter stat-glow">4.9/5</p>
+                <div className="flex text-primary">
+                  {[1, 2, 3, 4, 5].map(s => (
+                    <span key={s} className="material-icons-round text-xs">star</span>
+                  ))}
+                </div>
+                <p className="text-[8px] font-mono uppercase tracking-widest text-slate-500">Rating</p>
               </div>
             </div>
           </div>
@@ -144,7 +166,7 @@ export const HomePage: React.FC = () => {
           {/* Business Owner Card */}
           <div className="bg-white dark:bg-zinc-900 p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
             {/* Business Owners Illustration */}
-            <div className="mb-8 rounded-2xl overflow-hidden bg-[#E8E0F0] dark:bg-[#2A2235] aspect-video relative p-6 flex items-end justify-center">
+            <div className="mb-8 rounded-2xl overflow-hidden bg-[#E8E0F0] dark:bg-[#2A2235] aspect-[4/4] sm:aspect-video relative p-6 flex items-end justify-center">
               {/* Top tabs */}
               <div className="absolute top-4 left-6 right-6 flex gap-2">
                 <div className="px-4 py-2 border border-slate-400/40 rounded-md text-[11px] font-semibold text-slate-700 dark:text-slate-300 bg-white/60 dark:bg-white/10">Research &amp; Data</div>
@@ -205,7 +227,7 @@ export const HomePage: React.FC = () => {
           {/* Freelancer Card */}
           <div className="bg-white dark:bg-zinc-900 p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
             {/* Freelancers Illustration */}
-            <div className="mb-8 rounded-2xl overflow-hidden bg-[#FFF8E1] dark:bg-[#2A2518] aspect-video relative p-6 flex items-center justify-center">
+            <div className="mb-8 rounded-2xl overflow-hidden bg-[#FFF8E1] dark:bg-[#2A2518] aspect-[4/4] sm:aspect-video relative p-6 flex items-center justify-center">
               {/* Title */}
               <div className="absolute top-5 left-0 right-0 text-center">
                 <span className="font-display text-xl font-bold text-slate-800 dark:text-slate-200">Freelance Flow</span>
@@ -273,7 +295,7 @@ export const HomePage: React.FC = () => {
 
       {/* ── About Section ── */}
       <SectionWrapper>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
           {/* Image side */}
           <div className="order-2 lg:order-1 relative scroll-reveal-left">
             <div className="aspect-square rounded-[2rem] overflow-hidden bg-accent-green relative noise-overlay">
@@ -282,17 +304,29 @@ export const HomePage: React.FC = () => {
                 className="w-full h-full object-cover mix-blend-multiply opacity-80"
                 src={IMAGES.priyankTeaching}
               />
-              <div className="absolute top-10 left-10 space-y-4 z-10">
+              {/* Desktop-only floating badges */}
+              <div className="absolute top-10 left-10 space-y-4 z-10 hidden md:block">
                 <div className="glass-card-strong p-4 rounded-2xl premium-shadow-lg inline-block animate-float">
                   <p className="font-mono text-[10px] uppercase tracking-widest text-slate-500">Global Reach</p>
                   <p className="text-2xl font-bold stat-glow">12+ Countries</p>
                 </div>
               </div>
-              <div className="absolute bottom-10 right-10 z-10">
+              <div className="absolute bottom-10 right-10 z-10 hidden md:block">
                 <div className="bg-primary text-white p-6 rounded-2xl premium-shadow-primary rotate-3 hover:rotate-0 transition-transform duration-500 cursor-default animate-float-delayed">
                   <p className="text-4xl font-display italic">10k+ hours</p>
                   <p className="text-xs uppercase font-mono mt-1 opacity-80 tracking-wider">Of Systems Architecture</p>
                 </div>
+              </div>
+            </div>
+            {/* Mobile-only badges below the image */}
+            <div className="flex gap-3 mt-4 md:hidden">
+              <div className="flex-1 glass-card-strong rounded-xl p-3 premium-shadow">
+                <p className="font-mono text-[9px] uppercase tracking-widest text-slate-500">Global Reach</p>
+                <p className="text-lg font-bold stat-glow">12+ Countries</p>
+              </div>
+              <div className="flex-1 bg-primary text-white rounded-xl p-3 premium-shadow-primary">
+                <p className="text-2xl font-display italic">10k+ hours</p>
+                <p className="text-[9px] uppercase font-mono opacity-80 tracking-wider">Systems Architecture</p>
               </div>
             </div>
           </div>
