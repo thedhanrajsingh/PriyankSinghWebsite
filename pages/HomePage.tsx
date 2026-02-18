@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
               Automate Your Business &amp; Build Skills <span className="text-gradient-primary">That Pay</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-200 max-w-lg leading-relaxed">
+            <p className="text-base md:text-lg text-slate-800 dark:text-slate-200 max-w-lg leading-relaxed">
               Helping high-growth founders reclaim 20+ hours a week through intelligent systems, while mentoring the next generation of automation specialists.
             </p>
 
@@ -237,7 +237,7 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
             <h3 className="font-display text-4xl mb-4 font-bold">I'm a Business Owner</h3>
-            <p className="text-slate-600 dark:text-slate-200 mb-8 leading-relaxed">
+            <p className="text-base text-slate-800 dark:text-slate-200 mb-8 leading-relaxed">
               You're ready to scale but stuck in the weeds. I'll audit your workflows, design a custom automation ecosystem, and free up your team for creative work.
             </p>
             <div className="mt-auto">
@@ -300,7 +300,7 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
             <h3 className="font-display text-4xl mb-4 font-bold">I'm a Freelancer</h3>
-            <p className="text-slate-600 dark:text-slate-200 mb-4 leading-relaxed">
+            <p className="text-base text-slate-800 dark:text-slate-200 mb-4 leading-relaxed">
               Build and launch your own AI Automation Agency in 8 weeks — with real workflows, real clients, and real systems.
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-xs font-bold rounded-full mb-8">
@@ -364,7 +364,7 @@ export const HomePage: React.FC = () => {
             <h2 className="font-display text-5xl md:text-6xl tracking-tight leading-none">
               I'm Priyank Singh, and I help businesses <span className="text-gradient-primary">run on autopilot</span>.
             </h2>
-            <div className="space-y-4 text-lg text-slate-600 dark:text-slate-200 leading-relaxed">
+            <div className="space-y-4 text-base text-slate-800 dark:text-slate-200 leading-relaxed">
               <p>I didn't come from a coding background — I was a performance marketer. Running campaigns, managing funnels, and drowning in repetitive manual work every single day. That's when I discovered no-code automation, and everything changed.</p>
               <p>Since 2025, I've been helping businesses replace their messy, manual processes with clean, automated workflows using tools like n8n. I also work closely with founders on high-level AI and automation strategies — showing them exactly where to plug in automation to save time, cut costs, and scale without burning out their teams.</p>
             </div>
@@ -390,10 +390,10 @@ export const HomePage: React.FC = () => {
           <div className="text-center max-w-3xl mx-auto space-y-6 mb-16 scroll-reveal-scale">
             <p className="font-mono text-sm text-primary uppercase tracking-widest">Live 8-Week Cohort</p>
             <h2 className="font-display text-5xl md:text-7xl font-bold leading-tight">The Automation Academy</h2>
-            <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-base text-slate-800 dark:text-slate-300 leading-relaxed">
               Build and launch your own AI Automation Agency in 8 weeks — with real workflows, real clients, and real systems.
             </p>
-            <p className="text-base text-slate-500 dark:text-slate-200 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base text-slate-800 dark:text-slate-200 leading-relaxed max-w-2xl mx-auto">
               This live cohort is designed for freelancers, operators, and builders who want to turn automation skills into a consistent income stream. By the end, you won't just "know automation" — you'll have a working service business.
             </p>
           </div>
@@ -486,7 +486,7 @@ export const HomePage: React.FC = () => {
                       <h4 className="font-display text-2xl mb-4">{week.title}</h4>
                       <ul className="space-y-2">
                         {week.items.map((item, j) => (
-                          <li key={j} className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-200">
+                          <li key={j} className="flex items-center gap-2.5 text-sm text-slate-800 dark:text-slate-200">
                             <span className="material-icons-round text-primary text-sm flex-shrink-0">check_circle</span>
                             {item}
                           </li>
@@ -520,7 +520,7 @@ export const HomePage: React.FC = () => {
                     <span className="material-icons-round text-primary group-hover:text-white text-xl transition-colors duration-300">{item.icon}</span>
                   </div>
                   <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
+                  <p className="text-base text-slate-800 dark:text-slate-200 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -546,7 +546,7 @@ export const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">{item.title}</h4>
-                    <p className="text-sm text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
+                    <p className="text-base text-slate-800 dark:text-slate-200 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -561,7 +561,7 @@ export const HomePage: React.FC = () => {
                 <h3 className="font-display text-3xl md:text-5xl leading-tight">
                   Stop Learning. <span className="text-gradient-primary">Start Earning.</span>
                 </h3>
-                <p className="text-slate-600 dark:text-slate-200 max-w-xl mx-auto leading-relaxed">
+                <p className="text-base text-slate-800 dark:text-slate-200 max-w-xl mx-auto leading-relaxed">
                   Join 1,200+ students who've gone from zero to running their own automation agencies. 8 weeks. Real skills. Real clients. Real revenue.
                 </p>
                 <a

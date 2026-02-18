@@ -36,7 +36,7 @@ export const ConsultationPage: React.FC = () => {
             <h1 className="font-display text-5xl md:text-7xl leading-tight">
               Maximize Your Business With <span className="text-gradient-primary animated-underline active">Smart</span> Automation Systems
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-200 max-w-xl leading-relaxed">
+            <p className="text-base md:text-lg text-slate-800 dark:text-slate-200 max-w-xl leading-relaxed">
               Stop drowning in manual tasks. I build custom AI-driven workflows that recapture your time and scale your operations without adding headcount.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -94,7 +94,7 @@ export const ConsultationPage: React.FC = () => {
             <h2 className="font-display text-4xl md:text-5xl">
               Is your growth hitting a <span className="text-gradient-primary">manual ceiling?</span>
             </h2>
-            <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base text-slate-800 max-w-2xl mx-auto leading-relaxed">
               Scaling shouldn't mean working more hours. If you're facing these, you're ready for automation.
             </p>
           </div>
@@ -109,7 +109,7 @@ export const ConsultationPage: React.FC = () => {
                   <span className="material-icons-round text-2xl">{item.icon}</span>
                 </div>
                 <h3 className="font-display text-2xl mb-4">{item.title}</h3>
-                <p className="text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
+                <p className="text-base text-slate-800 dark:text-slate-200 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -123,7 +123,7 @@ export const ConsultationPage: React.FC = () => {
             <span className="text-primary font-semibold tracking-[0.2em] uppercase text-xs font-mono">How I Help You</span>
             <h2 className="font-display text-4xl md:text-5xl">Solutions Tailored for <br /><span className="text-gradient-primary">Your Infrastructure</span></h2>
           </div>
-          <p className="text-slate-500 max-w-sm leading-relaxed">Bespoke automation systems designed to fit your unique business logic, not the other way around.</p>
+          <p className="text-base text-slate-800 max-w-sm leading-relaxed">Bespoke automation systems designed to fit your unique business logic, not the other way around.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 scroll-reveal-stagger">
@@ -134,7 +134,7 @@ export const ConsultationPage: React.FC = () => {
                 <span className="material-icons-round text-2xl">account_tree</span>
               </div>
               <h3 className="font-display text-3xl mb-4">Workflow Setup</h3>
-              <p className="text-slate-500 mb-6 leading-relaxed">Connecting your stack (Zapier/Make) to ensure information flows flawlessly between systems.</p>
+              <p className="text-base text-slate-800 mb-6 leading-relaxed">Connecting your stack (Zapier/Make) to ensure information flows flawlessly between systems.</p>
               <ul className="space-y-3">
                 {['Inter-app synchronization', 'Error handling & notification', 'Automated report generation'].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm">
@@ -186,7 +186,7 @@ export const ConsultationPage: React.FC = () => {
                 <span className="material-icons-round text-2xl">settings_suggest</span>
               </div>
               <h3 className="font-display text-3xl mb-4">Internal Ops</h3>
-              <p className="text-slate-500 mb-6 leading-relaxed">Standardizing the "back office" so you can scale without the typical growing pains.</p>
+              <p className="text-base text-slate-800 mb-6 leading-relaxed">Standardizing the "back office" so you can scale without the typical growing pains.</p>
               <ul className="space-y-3">
                 {['Automated client onboarding', 'Team task auto-assignment', 'Inventory/Resource management'].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm">
@@ -264,7 +264,7 @@ export const ConsultationPage: React.FC = () => {
           <div className="text-center mb-20 space-y-4 scroll-reveal">
             <p className="font-mono text-xs text-primary uppercase tracking-widest">Your Journey</p>
             <h2 className="font-display text-4xl md:text-5xl">The Roadmap to <span className="text-gradient-primary">Freedom</span></h2>
-            <p className="text-slate-500 max-w-md mx-auto leading-relaxed">A structured approach to reclaiming your time.</p>
+            <p className="text-base text-slate-800 max-w-md mx-auto leading-relaxed">A structured approach to reclaiming your time.</p>
           </div>
           <div className="relative">
             {/* Connecting line */}
@@ -283,7 +283,7 @@ export const ConsultationPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-display text-2xl mb-2">{item.title}</h4>
-                    <p className="text-sm text-slate-500 px-4 leading-relaxed">{item.desc}</p>
+                    <p className="text-base text-slate-800 px-4 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -363,7 +363,7 @@ export const ConsultationPage: React.FC = () => {
                   {faq.q}
                   <span className="material-icons-round group-open:rotate-180 transition-transform duration-300 text-primary">expand_more</span>
                 </summary>
-                <div className="text-slate-600 dark:text-slate-200 leading-relaxed pb-6 px-6">
+                <div className="text-base text-slate-800 dark:text-slate-200 leading-relaxed pb-6 px-6">
                   {faq.a}
                 </div>
               </details>

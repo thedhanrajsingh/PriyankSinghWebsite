@@ -28,7 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
       <div
         className={`overflow-hidden transition-all duration-400 ease-in-out ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}
       >
-        <p className="px-6 text-slate-600 dark:text-slate-200 leading-relaxed">
+        <p className="px-6 text-base text-slate-800 dark:text-slate-200 leading-relaxed">
           {answer}
         </p>
       </div>
