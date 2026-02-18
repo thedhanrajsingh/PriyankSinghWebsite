@@ -30,7 +30,7 @@ export const HomePage: React.FC = () => {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] glow-pulse"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-300/10 rounded-full blur-[100px] glow-pulse" style={{ animationDelay: '2s' }}></div>
 
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start relative z-10">
           <div className="space-y-8 scroll-reveal-left">
             {/* Animated badge */}
             <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card-strong text-primary text-xs font-mono uppercase tracking-widest shimmer cursor-default">
