@@ -34,9 +34,9 @@ export const ConsultationPage: React.FC = () => {
               Consultation for Business Owners
             </span>
             <h1 className="font-display text-5xl md:text-7xl leading-tight">
-              Maximize Your Business With <span className="italic text-gradient-primary animated-underline active">Smart</span> Automation Systems
+              Maximize Your Business With <span className="text-gradient-primary animated-underline active">Smart</span> Automation Systems
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-200 max-w-xl leading-relaxed">
               Stop drowning in manual tasks. I build custom AI-driven workflows that recapture your time and scale your operations without adding headcount.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -92,7 +92,7 @@ export const ConsultationPage: React.FC = () => {
           <div className="text-center space-y-4 mb-16 scroll-reveal">
             <p className="font-mono text-sm text-primary uppercase tracking-widest">Common Problems</p>
             <h2 className="font-display text-4xl md:text-5xl">
-              Is your growth hitting a <span className="text-gradient-primary italic">manual ceiling?</span>
+              Is your growth hitting a <span className="text-gradient-primary">manual ceiling?</span>
             </h2>
             <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
               Scaling shouldn't mean working more hours. If you're facing these, you're ready for automation.
@@ -109,7 +109,7 @@ export const ConsultationPage: React.FC = () => {
                   <span className="material-icons-round text-2xl">{item.icon}</span>
                 </div>
                 <h3 className="font-display text-2xl mb-4">{item.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                <p className="text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -128,7 +128,7 @@ export const ConsultationPage: React.FC = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 scroll-reveal-stagger">
           {/* Workflow Setup */}
-          <div className="bg-white dark:bg-[#1E1E1E] border border-slate-200 dark:border-white/5 rounded-3xl p-8 flex flex-col premium-shadow card-hover">
+          <div className="bg-white dark:bg-[#1a2332] border border-slate-200 dark:border-white/5 rounded-3xl p-8 flex flex-col premium-shadow card-hover">
             <div className="mb-8">
               <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary mb-6">
                 <span className="material-icons-round text-2xl">account_tree</span>
@@ -180,7 +180,7 @@ export const ConsultationPage: React.FC = () => {
           </div>
 
           {/* Internal Ops */}
-          <div className="bg-white dark:bg-[#1E1E1E] border border-slate-200 dark:border-white/5 rounded-3xl p-8 flex flex-col premium-shadow card-hover">
+          <div className="bg-white dark:bg-[#1a2332] border border-slate-200 dark:border-white/5 rounded-3xl p-8 flex flex-col premium-shadow card-hover">
             <div className="mb-8">
               <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary mb-6">
                 <span className="material-icons-round text-2xl">settings_suggest</span>
@@ -215,7 +215,7 @@ export const ConsultationPage: React.FC = () => {
                 <div>
                   <p className="font-mono text-xs text-primary uppercase tracking-widest mb-4">Numbers That Speak</p>
                   <h2 className="font-display text-4xl md:text-5xl leading-tight">
-                    Data-Driven Success <br /><span className="text-gradient-primary italic">In Real Time.</span>
+                    Data-Driven Success <br /><span className="text-gradient-primary">In Real Time.</span>
                   </h2>
                 </div>
                 <div className="grid grid-cols-2 gap-8 scroll-reveal-stagger">
@@ -235,20 +235,20 @@ export const ConsultationPage: React.FC = () => {
 
               {/* Testimonial */}
               <div className="scroll-reveal-right">
-                <div className="bg-white dark:bg-zinc-800 border border-slate-200 dark:border-white/10 rounded-2xl p-8 shadow-lg">
+                <div className="bg-white dark:bg-[#1a2332] border border-slate-200 dark:border-white/10 rounded-2xl p-8 shadow-lg">
                   <div className="flex text-primary mb-4">
                     {[1, 2, 3, 4, 5].map(s => (
                       <span key={s} className="material-icons-round text-lg">star</span>
                     ))}
                   </div>
-                  <p className="text-lg italic text-slate-700 dark:text-slate-200 leading-relaxed mb-6">
+                  <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed mb-6">
                     "Priyank didn't just automate our emails; he rebuilt our entire lead-to-delivery pipeline. We've scaled 3x without hiring a single admin person."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center text-white font-bold">JM</div>
                     <div>
                       <div className="font-bold text-slate-900 dark:text-white">Julian Marcus</div>
-                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">CEO, SaaS Dynamics</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-200 uppercase tracking-wider">CEO, SaaS Dynamics</div>
                     </div>
                   </div>
                 </div>
@@ -263,7 +263,7 @@ export const ConsultationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 space-y-4 scroll-reveal">
             <p className="font-mono text-xs text-primary uppercase tracking-widest">Your Journey</p>
-            <h2 className="font-display text-4xl md:text-5xl">The Roadmap to <span className="text-gradient-primary italic">Freedom</span></h2>
+            <h2 className="font-display text-4xl md:text-5xl">The Roadmap to <span className="text-gradient-primary">Freedom</span></h2>
             <p className="text-slate-500 max-w-md mx-auto leading-relaxed">A structured approach to reclaiming your time.</p>
           </div>
           <div className="relative">
@@ -299,7 +299,7 @@ export const ConsultationPage: React.FC = () => {
             <div className="bg-background-light dark:bg-background-dark rounded-[calc(2rem-3px)] p-8 md:p-14 text-center space-y-8">
               <p className="font-mono text-xs text-primary uppercase tracking-widest">Start Today</p>
               <h2 className="font-display text-3xl md:text-5xl leading-tight">
-                Ready to build your <br /><span className="text-gradient-primary italic">Self-Operating Business?</span>
+                Ready to build your <br /><span className="text-gradient-primary">Self-Operating Business?</span>
               </h2>
               <div className="grid sm:grid-cols-2 gap-4 text-left glass-card p-6 rounded-2xl">
                 {[
@@ -363,7 +363,7 @@ export const ConsultationPage: React.FC = () => {
                   {faq.q}
                   <span className="material-icons-round group-open:rotate-180 transition-transform duration-300 text-primary">expand_more</span>
                 </summary>
-                <div className="text-slate-600 dark:text-slate-400 leading-relaxed pb-6 px-6">
+                <div className="text-slate-600 dark:text-slate-200 leading-relaxed pb-6 px-6">
                   {faq.a}
                 </div>
               </details>

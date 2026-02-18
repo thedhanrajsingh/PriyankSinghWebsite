@@ -21,7 +21,7 @@ body {
 }
 
 .dark body {
-    background-color: #121212;
+    background-color: #1E1E1E;
     color: #f1f5f9;
 }
 
@@ -344,6 +344,7 @@ h3,
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }

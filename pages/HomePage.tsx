@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
               Automate Your Business &amp; Build Skills <span className="text-gradient-primary">That Pay</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-200 max-w-lg leading-relaxed">
               Helping high-growth founders reclaim 20+ hours a week through intelligent systems, while mentoring the next generation of automation specialists.
             </p>
 
@@ -147,7 +147,7 @@ export const HomePage: React.FC = () => {
                 <span className="text-white text-2xl md:text-3xl font-bold whitespace-nowrap">
                   Linked<span className="text-blue-300">in</span>
                 </span>
-                <span className="text-white text-2xl md:text-3xl font-display italic whitespace-nowrap">
+                <span className="text-white text-2xl md:text-3xl font-display whitespace-nowrap">
                   Notion
                 </span>
                 <span className="text-white text-2xl md:text-3xl font-mono font-bold whitespace-nowrap">
@@ -165,7 +165,7 @@ export const HomePage: React.FC = () => {
                 <span className="text-white text-2xl md:text-3xl font-bold whitespace-nowrap">
                   Linked<span className="text-blue-300">in</span>
                 </span>
-                <span className="text-white text-2xl md:text-3xl font-display italic whitespace-nowrap">
+                <span className="text-white text-2xl md:text-3xl font-display whitespace-nowrap">
                   Notion
                 </span>
                 <span className="text-white text-2xl md:text-3xl font-mono font-bold whitespace-nowrap">
@@ -181,17 +181,17 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* ── Path Selection ── */}
-      <SectionWrapper className="bg-[#EBE7E1] dark:bg-[#1A1A1A]" id="work">
+      <SectionWrapper className="bg-[#EBE7E1] dark:bg-[#1E1E1E]" id="work">
         <div className="text-center mb-16 space-y-4 scroll-reveal">
           <p className="font-mono text-sm text-primary uppercase tracking-widest">How Can I Help?</p>
           <h2 className="font-display text-5xl md:text-6xl tracking-tight">
-            Your Path to Success <span className="italic text-gradient-primary">Starts Here</span>
+            Your Path to Success <span className="text-gradient-primary">Starts Here</span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-reveal-stagger">
           {/* Business Owner Card */}
-          <div className="bg-white dark:bg-zinc-900 p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
+          <div className="bg-white dark:bg-[#1a2332] p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
             {/* Business Owners Illustration */}
             <div className="mb-8 rounded-2xl overflow-hidden bg-[#E8E0F0] dark:bg-[#2A2235] aspect-[4/4] sm:aspect-video relative p-6 flex items-end justify-center">
               {/* Top tabs */}
@@ -203,14 +203,14 @@ export const HomePage: React.FC = () => {
 
               {/* Workflow card */}
               <div className="relative flex items-end gap-4 w-full mt-8">
-                <div className="bg-white dark:bg-zinc-800 rounded-xl shadow-lg p-4 w-3/5 space-y-2.5">
+                <div className="bg-white dark:bg-[#15202e] rounded-xl shadow-lg p-4 w-3/5 space-y-2.5">
                   {[
                     { text: 'Streamlined Marketing Efforts', type: 'toggle' },
                     { text: 'Optimized Online Presence', type: 'check' },
                     { text: 'Exponential Business Growth', type: 'toggle' },
                     { text: 'Tailored Audience Strategy', type: 'check' },
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center justify-between bg-slate-50 dark:bg-zinc-700 rounded-lg px-3 py-2">
+                    <div key={i} className="flex items-center justify-between bg-slate-50 dark:bg-[#1e2d3d] rounded-lg px-3 py-2">
                       <span className="text-[10px] font-medium text-slate-700 dark:text-slate-300">{item.text}</span>
                       {item.type === 'toggle' ? (
                         <div className="w-8 h-4 bg-primary rounded-full relative flex-shrink-0">
@@ -226,18 +226,18 @@ export const HomePage: React.FC = () => {
                 {/* Connection node */}
                 <div className="flex flex-col items-center gap-1">
                   <div className="w-[2px] h-6 bg-slate-400/50"></div>
-                  <div className="w-8 h-8 rounded-full border-2 border-primary/50 bg-white dark:bg-zinc-800 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full border-2 border-primary/50 bg-white dark:bg-[#15202e] flex items-center justify-center">
                     <span className="text-primary text-lg font-bold leading-none">+</span>
                   </div>
                   <div className="w-[2px] h-6 bg-slate-400/50"></div>
-                  <div className="border border-slate-700 dark:border-slate-400 px-2 py-1 text-[9px] font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-zinc-800 whitespace-nowrap">Business Owners</div>
+                  <div className="border border-slate-700 dark:border-slate-400 px-2 py-1 text-[9px] font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-[#15202e] whitespace-nowrap">Business Owners</div>
                   {/* Cursor */}
                   <svg className="w-5 h-5 text-primary mt-1" viewBox="0 0 24 24" fill="currentColor"><path d="M4 0l16 12.279-6.951 1.17L19.39 24 15.456 24l-5.18-9.564L4 18.479z" /></svg>
                 </div>
               </div>
             </div>
             <h3 className="font-display text-4xl mb-4 font-bold">I'm a Business Owner</h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-200 mb-8 leading-relaxed">
               You're ready to scale but stuck in the weeds. I'll audit your workflows, design a custom automation ecosystem, and free up your team for creative work.
             </p>
             <div className="mt-auto">
@@ -252,7 +252,7 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Freelancer Card */}
-          <div className="bg-white dark:bg-zinc-900 p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
+          <div className="bg-white dark:bg-[#1a2332] p-10 rounded-[2rem] border border-black/5 dark:border-white/5 flex flex-col h-full card-hover group">
             {/* Freelancers Illustration */}
             <div className="mb-8 rounded-2xl overflow-hidden bg-[#FFF8E1] dark:bg-[#2A2518] aspect-[4/4] sm:aspect-video relative p-6 flex items-center justify-center">
               {/* Title */}
@@ -262,7 +262,7 @@ export const HomePage: React.FC = () => {
 
               <div className="relative flex items-center gap-4 w-full mt-4">
                 {/* Window card */}
-                <div className="bg-white dark:bg-zinc-800 rounded-xl shadow-lg border border-slate-200 dark:border-zinc-700 w-3/5 overflow-hidden">
+                <div className="bg-white dark:bg-[#15202e] rounded-xl shadow-lg border border-slate-200 dark:border-zinc-700 w-3/5 overflow-hidden">
                   {/* Window title bar */}
                   <div className="flex items-center justify-end px-3 py-1.5 border-b border-slate-100 dark:border-zinc-700">
                     <div className="flex gap-1.5 text-slate-400 text-[10px]">
@@ -275,7 +275,7 @@ export const HomePage: React.FC = () => {
                       { text: 'Negotiate Confidently', sub: 'Set Rates, Value work' },
                       { text: 'Become Sought-After', sub: 'Deliver Excellence, Referrals' },
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center justify-between bg-slate-50 dark:bg-zinc-700 rounded-lg px-3 py-2.5 border border-slate-100 dark:border-zinc-600">
+                      <div key={i} className="flex items-center justify-between bg-slate-50 dark:bg-[#1e2d3d] rounded-lg px-3 py-2.5 border border-slate-100 dark:border-zinc-600">
                         <div>
                           <p className="text-[11px] font-semibold text-slate-800 dark:text-slate-200">{item.text}</p>
                           <p className="text-[9px] text-slate-500">{item.sub}</p>
@@ -289,18 +289,18 @@ export const HomePage: React.FC = () => {
                 {/* Connection node */}
                 <div className="flex flex-col items-center gap-1">
                   <div className="w-[2px] h-6 bg-slate-400/50"></div>
-                  <div className="w-8 h-8 rounded-full border-2 border-violet-400/50 bg-white dark:bg-zinc-800 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full border-2 border-violet-400/50 bg-white dark:bg-[#15202e] flex items-center justify-center">
                     <span className="text-violet-500 text-lg font-bold leading-none">+</span>
                   </div>
                   <div className="w-[2px] h-6 bg-slate-400/50"></div>
-                  <div className="border border-slate-700 dark:border-slate-400 px-2 py-1 text-[9px] font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-zinc-800 whitespace-nowrap">Freelancers !</div>
+                  <div className="border border-slate-700 dark:border-slate-400 px-2 py-1 text-[9px] font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-[#15202e] whitespace-nowrap">Freelancers !</div>
                   {/* Cursor */}
                   <svg className="w-5 h-5 text-primary mt-1" viewBox="0 0 24 24" fill="currentColor"><path d="M4 0l16 12.279-6.951 1.17L19.39 24 15.456 24l-5.18-9.564L4 18.479z" /></svg>
                 </div>
               </div>
             </div>
             <h3 className="font-display text-4xl mb-4 font-bold">I'm a Freelancer</h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-200 mb-4 leading-relaxed">
               Build and launch your own AI Automation Agency in 8 weeks — with real workflows, real clients, and real systems.
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-xs font-bold rounded-full mb-8">
@@ -339,8 +339,8 @@ export const HomePage: React.FC = () => {
                 </div>
               </div>
               <div className="absolute bottom-10 right-10 z-10 hidden md:block">
-                <div className="bg-primary text-white p-6 rounded-2xl premium-shadow-primary rotate-3 hover:rotate-0 transition-transform duration-500 cursor-default animate-float-delayed">
-                  <p className="text-4xl font-display italic">10k+ hours</p>
+                <div className="bg-primary text-white p-6 rounded-2xl premium-shadow-primary transition-transform duration-500 cursor-default animate-float-delayed">
+                  <p className="text-4xl font-display font-bold">10k+ hours</p>
                   <p className="text-xs uppercase font-mono mt-1 opacity-80 tracking-wider">Of Systems Architecture</p>
                 </div>
               </div>
@@ -352,7 +352,7 @@ export const HomePage: React.FC = () => {
                 <p className="text-lg font-bold stat-glow">12+ Countries</p>
               </div>
               <div className="flex-1 bg-primary text-white rounded-xl p-3 premium-shadow-primary">
-                <p className="text-2xl font-display italic">10k+ hours</p>
+                <p className="text-2xl font-display font-bold">10k+ hours</p>
                 <p className="text-[9px] uppercase font-mono opacity-80 tracking-wider">Systems Architecture</p>
               </div>
             </div>
@@ -360,11 +360,11 @@ export const HomePage: React.FC = () => {
 
           {/* Text side */}
           <div className="order-1 lg:order-2 space-y-8 scroll-reveal-right">
-            <p className="font-mono text-sm text-primary uppercase tracking-widest italic">The Person Behind the Systems</p>
+            <p className="font-mono text-sm text-primary uppercase tracking-widest">The Person Behind the Systems</p>
             <h2 className="font-display text-5xl md:text-6xl tracking-tight leading-none">
               I'm Priyank Singh, and I help businesses <span className="text-gradient-primary">run on autopilot</span>.
             </h2>
-            <div className="space-y-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-lg text-slate-600 dark:text-slate-200 leading-relaxed">
               <p>I didn't come from a coding background — I was a performance marketer. Running campaigns, managing funnels, and drowning in repetitive manual work every single day. That's when I discovered no-code automation, and everything changed.</p>
               <p>Since 2025, I've been helping businesses replace their messy, manual processes with clean, automated workflows using tools like n8n. I also work closely with founders on high-level AI and automation strategies — showing them exactly where to plug in automation to save time, cut costs, and scale without burning out their teams.</p>
             </div>
@@ -383,17 +383,17 @@ export const HomePage: React.FC = () => {
       </SectionWrapper>
 
       {/* ── Academy Section ── */}
-      <section className="py-24 bg-accent-green dark:bg-zinc-800 rounded-[3rem] mx-4 md:mx-6 my-12 relative noise-overlay overflow-hidden" id="academy">
+      <section className="py-24 bg-accent-green dark:bg-[#1E1E1E] rounded-[3rem] mx-4 md:mx-6 my-12 relative noise-overlay overflow-hidden" id="academy">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
 
           {/* Hero Block */}
           <div className="text-center max-w-3xl mx-auto space-y-6 mb-16 scroll-reveal-scale">
             <p className="font-mono text-sm text-primary uppercase tracking-widest">Live 8-Week Cohort</p>
-            <h2 className="font-display text-5xl md:text-7xl italic leading-tight">The Automation Academy</h2>
+            <h2 className="font-display text-5xl md:text-7xl font-bold leading-tight">The Automation Academy</h2>
             <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed">
               Build and launch your own AI Automation Agency in 8 weeks — with real workflows, real clients, and real systems.
             </p>
-            <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base text-slate-500 dark:text-slate-200 leading-relaxed max-w-2xl mx-auto">
               This live cohort is designed for freelancers, operators, and builders who want to turn automation skills into a consistent income stream. By the end, you won't just "know automation" — you'll have a working service business.
             </p>
           </div>
@@ -415,7 +415,7 @@ export const HomePage: React.FC = () => {
                 ].map((tool, i) => (
                   <div
                     key={i}
-                    className="w-14 h-14 bg-white dark:bg-zinc-800 rounded-2xl premium-shadow-lg flex items-center justify-center p-3 animate-bounce-slow hover:scale-110 transition-transform duration-300 cursor-pointer"
+                    className="w-14 h-14 bg-white dark:bg-[#15202e] rounded-2xl premium-shadow-lg flex items-center justify-center p-3 animate-bounce-slow hover:scale-110 transition-transform duration-300 cursor-pointer"
                     style={{ animationDelay: tool.delay }}
                   >
                     <img alt={tool.alt} className="w-full h-full object-contain" src={tool.img} />
@@ -437,7 +437,7 @@ export const HomePage: React.FC = () => {
           <div className="mb-20">
             <div className="text-center mb-12 scroll-reveal">
               <p className="font-mono text-sm text-primary uppercase tracking-widest mb-4">What You'll Learn &amp; Build</p>
-              <h3 className="font-display text-4xl md:text-5xl italic">8 Weeks to a Working Agency</h3>
+              <h3 className="font-display text-4xl md:text-5xl font-bold">8 Weeks to a Working Agency</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 scroll-reveal-stagger">
@@ -475,7 +475,7 @@ export const HomePage: React.FC = () => {
               ].map((week, i) => (
                 <div
                   key={i}
-                  className={`bg-white dark:bg-zinc-900 p-8 rounded-2xl border border-black/5 dark:border-white/5 card-hover group ${i === 4 ? 'md:col-span-2' : ''}`}
+                  className={`bg-white dark:bg-[#1a2332] p-8 rounded-2xl border border-black/5 dark:border-white/5 card-hover group ${i === 4 ? 'md:col-span-2' : ''}`}
                 >
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0 w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
@@ -486,7 +486,7 @@ export const HomePage: React.FC = () => {
                       <h4 className="font-display text-2xl mb-4">{week.title}</h4>
                       <ul className="space-y-2">
                         {week.items.map((item, j) => (
-                          <li key={j} className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-400">
+                          <li key={j} className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-200">
                             <span className="material-icons-round text-primary text-sm flex-shrink-0">check_circle</span>
                             {item}
                           </li>
@@ -503,7 +503,7 @@ export const HomePage: React.FC = () => {
           <div className="mb-20">
             <div className="text-center mb-12 scroll-reveal">
               <p className="font-mono text-sm text-primary uppercase tracking-widest mb-4">Everything You Need</p>
-              <h3 className="font-display text-4xl md:text-5xl italic">What's Included</h3>
+              <h3 className="font-display text-4xl md:text-5xl font-bold">What's Included</h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 scroll-reveal-stagger">
@@ -515,12 +515,12 @@ export const HomePage: React.FC = () => {
                 { icon: 'groups', title: 'Community Access', desc: 'Join a private group of 1,200+ automation builders to share wins, ask questions, and find collaborators.' },
                 { icon: 'support_agent', title: 'Ongoing Support', desc: "Post-cohort access to resources, templates, and community. You're never on your own." },
               ].map((item, i) => (
-                <div key={i} className="bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-black/5 dark:border-white/5 card-hover group">
+                <div key={i} className="bg-white dark:bg-[#1a2332] p-6 rounded-2xl border border-black/5 dark:border-white/5 card-hover group">
                   <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
                     <span className="material-icons-round text-primary group-hover:text-white text-xl transition-colors duration-300">{item.icon}</span>
                   </div>
                   <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -530,7 +530,7 @@ export const HomePage: React.FC = () => {
           <div className="mb-20">
             <div className="text-center mb-12 scroll-reveal">
               <p className="font-mono text-sm text-primary uppercase tracking-widest mb-4">Is This For You?</p>
-              <h3 className="font-display text-4xl md:text-5xl italic">Built for Builders Like You</h3>
+              <h3 className="font-display text-4xl md:text-5xl font-bold">Built for Builders Like You</h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto scroll-reveal-stagger">
@@ -540,13 +540,13 @@ export const HomePage: React.FC = () => {
                 { title: 'Consultants & Operators', desc: 'Looking to add automation as a high-value skill to their offering.' },
                 { title: 'Aspiring Agency Owners', desc: "Serious about building a real automation business — not just learning theory." },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-black/5 dark:border-white/5 card-hover">
+                <div key={i} className="flex items-start gap-4 bg-white dark:bg-[#1a2332] p-6 rounded-2xl border border-black/5 dark:border-white/5 card-hover">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="material-icons-round text-primary text-lg">check</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">{item.title}</h4>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-200 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -559,9 +559,9 @@ export const HomePage: React.FC = () => {
               <div className="bg-background-light dark:bg-background-dark rounded-[calc(2rem-3px)] p-8 md:p-14 text-center space-y-6">
                 <p className="font-mono text-xs text-primary uppercase tracking-widest">Start Building Your Agency</p>
                 <h3 className="font-display text-3xl md:text-5xl leading-tight">
-                  Stop Learning. <span className="italic text-gradient-primary">Start Earning.</span>
+                  Stop Learning. <span className="text-gradient-primary">Start Earning.</span>
                 </h3>
-                <p className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-200 max-w-xl mx-auto leading-relaxed">
                   Join 1,200+ students who've gone from zero to running their own automation agencies. 8 weeks. Real skills. Real clients. Real revenue.
                 </p>
                 <a
@@ -584,7 +584,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <p className="font-mono text-sm text-primary uppercase tracking-widest mb-4">Got Questions?</p>
-            <h2 className="font-display text-5xl italic">Curious? Questions Answered.</h2>
+            <h2 className="font-display text-5xl font-bold">Curious? Questions Answered.</h2>
           </div>
           <div className="scroll-reveal">
             <Accordion items={[
