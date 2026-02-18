@@ -42,7 +42,7 @@ export const HomePage: React.FC = () => {
             </div>
 
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">
-              Automate Your Business &amp; Build Skills <span className="italic text-gradient-primary">That Pay</span>
+              Automate Your Business &amp; Build Skills <span className="text-gradient-primary">That Pay</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
@@ -209,7 +209,7 @@ export const HomePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <h3 className="font-display text-4xl mb-4 italic">I'm a Business Owner</h3>
+            <h3 className="font-display text-4xl mb-4 font-bold">I'm a Business Owner</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
               You're ready to scale but stuck in the weeds. I'll audit your workflows, design a custom automation ecosystem, and free up your team for creative work.
             </p>
@@ -272,7 +272,7 @@ export const HomePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <h3 className="font-display text-4xl mb-4 italic">I'm a Freelancer</h3>
+            <h3 className="font-display text-4xl mb-4 font-bold">I'm a Freelancer</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
               Build and launch your own AI Automation Agency in 8 weeks — with real workflows, real clients, and real systems.
             </p>
