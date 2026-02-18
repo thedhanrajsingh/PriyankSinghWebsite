@@ -127,28 +127,55 @@ export const HomePage: React.FC = () => {
       </header>
 
       {/* ── Trusted By Bar ── */}
-      <section className="bg-accent-brown py-12 relative noise-overlay">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <p className="text-center text-white/30 font-mono text-xs uppercase tracking-[0.3em] mb-10">
+      <section className="bg-accent-brown py-12 relative noise-overlay overflow-hidden">
+        <div className="relative z-10">
+          <p className="text-center text-white/50 font-mono text-xs uppercase tracking-[0.3em] mb-10">
             Trusted by founders at
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 scroll-reveal-stagger">
-            {/* Clean text-based logos — premium pattern */}
-            <span className="text-white/40 hover:text-white/70 transition-all duration-300 cursor-pointer text-xl md:text-2xl font-bold tracking-tight">
-              <span className="text-amber-500/70">⚡</span> Zapier
-            </span>
-            <span className="text-white/40 hover:text-white/70 transition-all duration-300 cursor-pointer text-xl md:text-2xl font-bold">
-              Linked<span className="text-blue-400/60">in</span>
-            </span>
-            <span className="text-white/40 hover:text-white/70 transition-all duration-300 cursor-pointer text-xl md:text-2xl font-display italic">
-              Notion
-            </span>
-            <span className="text-white/40 hover:text-white/70 transition-all duration-300 cursor-pointer text-xl md:text-2xl font-mono font-bold">
-              GitHub
-            </span>
-            <span className="text-white/40 hover:text-white/70 transition-all duration-300 cursor-pointer text-xl md:text-2xl font-bold tracking-tight">
-              Airtable
-            </span>
+          {/* Marquee container */}
+          <div className="relative">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-accent-brown to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-accent-brown to-transparent z-10"></div>
+            {/* Scrolling track */}
+            <div className="flex animate-marquee">
+              {/* First set */}
+              <div className="flex items-center gap-16 md:gap-24 shrink-0 px-8">
+                <span className="text-white text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
+                  <span className="text-amber-400">⚡</span> Zapier
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-bold whitespace-nowrap">
+                  Linked<span className="text-blue-300">in</span>
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-display italic whitespace-nowrap">
+                  Notion
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-mono font-bold whitespace-nowrap">
+                  GitHub
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
+                  Airtable
+                </span>
+              </div>
+              {/* Duplicate set for seamless loop */}
+              <div className="flex items-center gap-16 md:gap-24 shrink-0 px-8">
+                <span className="text-white text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
+                  <span className="text-amber-400">⚡</span> Zapier
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-bold whitespace-nowrap">
+                  Linked<span className="text-blue-300">in</span>
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-display italic whitespace-nowrap">
+                  Notion
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-mono font-bold whitespace-nowrap">
+                  GitHub
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap">
+                  Airtable
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
